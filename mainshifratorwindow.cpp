@@ -16,6 +16,9 @@ MainShifratorWindow::MainShifratorWindow(QWidget *parent)
     // Установка графического интерфейса
     ui->setupUi(this);
 
+    ui->teSourceText->setTextColor(QColor("red"));
+    ui->teEncodedText->setTextColor(QColor("blue"));
+
     //Изначально все кнопки кодирования/декодирования и сохранения деактивированы
     ui->pbDecode->setEnabled(false);
     ui->pbEncode->setEnabled(false);
